@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--#region Headline1-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline2-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline3-->
+    <Style
+        x:Key="TxtHeadline3_1"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#300" />
+        <Setter Property="FontSize" Value="48" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style
+        x:Key="TxtHeadline3_2"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#500" />
+        <Setter Property="FontSize" Value="48" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Headline4-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline5-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline6-->
+    <Style
+        x:Key="TxtHeadline6_1"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#500" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style
+        x:Key="TxtHeadline6_2"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#400" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Title-->
+    <Style
+        x:Key="TxtTitle_1"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#500" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Subtitle1-->
+    <Style
+        x:Key="TxtSubtitle1_1"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#300" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style
+        x:Key="TxtSubtitle1_2"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#400" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Subtitle2-->
+
+    <!--#endregion-->
+
+
+    <!--#region Body1-->
+    <Style
+        x:Key="TxtBody1_1"
+        TargetType="Label">
+        <Setter Property="FontFamily" Value="Kanit#400" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="TextColor" Value="#5a6db8" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Body2-->
+
+    <!--#endregion-->
+
+
+    <!--#region Button-->
+
+    <!--#endregion-->
+
+
+    <!--#region Caption-->
+
+    <!--#endregion-->
+
+
+    <!--#region Overline1-->
+
+    <!--#endregion-->
+
+
+    <!--#region Overline2-->
+
+    <!--#endregion-->
+
+</ResourceDictionary>
