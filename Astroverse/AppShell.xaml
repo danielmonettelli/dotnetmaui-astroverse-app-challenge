@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Astroverse"
     xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-    Title="Astroverse">
+    xmlns:view="clr-namespace:Astroverse.Views"
     Title="Astroverse"
     Shell.FlyoutBehavior="Disabled">
 
@@ -16,8 +16,8 @@
     </Shell.Behaviors>
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Welcome"
+        ContentTemplate="{DataTemplate view:WelcomePage}"
+        Route="WelcomePage" />
 
 </Shell>

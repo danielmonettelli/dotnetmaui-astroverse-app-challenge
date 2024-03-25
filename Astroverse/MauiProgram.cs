@@ -1,4 +1,7 @@
-﻿using CommunityToolkit.Maui;
+﻿using Astroverse.Services;
+using Astroverse.ViewModels;
+using Astroverse.Views;
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 using Sharpnado.MaterialFrame;
 
@@ -17,6 +20,14 @@ public static class MauiProgram
             fonts.AddFont("Kanit-Regular.ttf", "Kanit#400");
             fonts.AddFont("Kanit-Medium.ttf", "Kanit#500");
         }).UseMauiCommunityToolkit();
+
+        builder.Services.AddSingleton<IPlanetsService, PlanetsService>();
+
+        builder.Services.AddSingleton<WelcomeViewModel>();
+        builder.Services.AddSingleton<PlanetariumViewModel>();
+
+        builder.Services.AddSingleton<WelcomePage>();
+        builder.Services.AddSingleton<PlanetariumPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();
