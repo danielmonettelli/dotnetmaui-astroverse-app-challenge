@@ -3,12 +3,35 @@
     x:Class="Astroverse.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="#030a24">
+    BackgroundColor="#030a24"
+    BackgroundImageSource="{OnIdiom Phone='img_background_phone.png',
+                                    Default='img_background_desktop.png'}">
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="16,0"
+            Padding="16"
             Spacing="8">
+
+            <Image Style="{StaticResource icon_right_arrow}" />
+
+            <Image Style="{StaticResource icon_temperature}" />
+
+            <Image Style="{StaticResource icon_earth}" />
+
+            <Image Style="{StaticResource icon_rocket}" />
+
+            <Image Style="{StaticResource icon_speed}" />
+
+            <Image Style="{StaticResource icon_satellites}" />
+
+            <Image Style="{StaticResource icon_area}" />
+
+            <Image Style="{StaticResource icon_rotation}" />
+
+            <Image
+                HeightRequest="300"
+                Source="img_planet_earth.png"
+                WidthRequest="300" />
 
             <Label
                 Style="{StaticResource TxtHeadline3_1}"
