@@ -3,6 +3,7 @@ using Astroverse.ViewModels;
 using Astroverse.Views;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Plugin.Maui.DebugRainbows;
 using Sharpnado.MaterialFrame;
 
 namespace Astroverse;
@@ -13,6 +14,17 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
         builder.UseMauiApp<App>()
+        .UseDebugRainbows(new DebugRainbowsOptions
+        {
+            ShowRainbows = true,
+            ShowGrid = false,
+            HorizontalItemSize = 10,
+            VerticalItemSize = 10,
+            MajorGridLineInterval = 0,
+            MajorGridLines = new GridLineOptions { Color = Color.FromRgb(255, 0, 0), Opacity = 1, Width = 4 },
+            MinorGridLines = new GridLineOptions { Color = Color.FromRgb(255, 0, 0), Opacity = 1, Width = 1 },
+            GridOrigin = DebugGridOrigin.Center,
+        })
         .UseSharpnadoMaterialFrame(loggerEnable: false)
         .ConfigureFonts(fonts =>
         {
