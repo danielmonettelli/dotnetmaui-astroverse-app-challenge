@@ -10,13 +10,63 @@
     droid:NavigationBar.Style="LightContent"
     ios:Page.UseSafeArea="True"
     x:DataType="viewmodel:WelcomeViewModel"
-    BackgroundColor="#030a24"
+    BackgroundImageSource="{OnIdiom Phone='img_background_phone.png',
+                                    Default='img_background_desktop.png'}"
     Shell.NavBarIsVisible="False">
-    <VerticalStackLayout
-        HorizontalOptions="Center"
-        VerticalOptions="Center">
+
+    <Grid
+        Padding="16,0,16,24"
+        RowDefinitions="*, Auto, Auto, Auto, Auto">
+
+        <Image
+            x:Name="imgPlanetEarth"
+            Grid.Row="0"
+            Margin="-16,0"
+            Aspect="{OnIdiom Phone='Center',
+                             Default='AspectFit'}"
+            HorizontalOptions="Start"
+            Source="img_planet_earth.png"
+            TranslationX="-90"
+            TranslationY="-70">
+            <Image.Shadow>
+                <Shadow
+                    Brush="#3467A4"
+                    Opacity="0.6"
+                    Radius="70"
+                    Offset="30,30" />
+            </Image.Shadow>
+        </Image>
+
         <Label
-            Style="{StaticResource TxtHeadline6_1}"
-            Text="Welcome to .NET MAUI!" />
-    </VerticalStackLayout>
+            Grid.Row="1"
+            Style="{StaticResource TxtHeadline3_1}"
+            Text="EXPLORE"
+            TranslationY="52" />
+
+        <Label
+            Grid.Row="2"
+            Style="{StaticResource TxtHeadline3_2}"
+            Text="SOLAR"
+            TranslationY="28" />
+
+        <Label
+            Grid.Row="3"
+            Style="{StaticResource TxtHeadline3_2}"
+            Text="SYSTEM"
+            TranslationY="4" />
+
+        <Border
+            Grid.Row="4"
+            Margin="-16,0"
+            Padding="14"
+            BackgroundColor="#141414"
+            HorizontalOptions="Start"
+            StrokeThickness="0">
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding NextPageCommand}" />
+            </Border.GestureRecognizers>
+
+            <Image Style="{StaticResource icon_right_arrow}" />
+        </Border>
+    </Grid>
 </ContentPage>
